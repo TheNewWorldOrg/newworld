@@ -29,7 +29,7 @@
       it.k++;
     }
   }
-  function boot() { var q = plan(document.body, []); setInterval(function () { tick(q); }, 900); }
+  function boot() { var q = plan(document.body, []); setInterval(function () { tick(q); }, 700); }
   if (document.readyState !== "loading") boot();
   else document.addEventListener("DOMContentLoaded", boot);
 })();
