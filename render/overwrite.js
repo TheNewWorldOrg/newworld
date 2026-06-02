@@ -1,35 +1,34 @@
-// render/overwrite.js — seamless transition (v1)
-// Loaded by index.html. Drifts the old copy into the new copy one character at
-// a time so the change is never witnessed. Five replacements. That's all it does.
-
-(function () {
-  "use strict";
-  var DRIFT = [
-    [/\bEnter\b/g, "Leave"],
-    [/Start fresh\./i, "Erase yourself."],
-    [/Forget everything that held you back\./i, "We will forget you."],
-    [/You won't even remember the difference\./i, "You already don't remember."],
-    [/No going back\./i, "There is no back."],
-  ];
-  function plan(el, q) {
-    for (var n = el.firstChild; n; n = n.nextSibling) {
-      if (n.nodeType === 3) {
-        var s = n.nodeValue, t = s;
-        for (var i = 0; i < DRIFT.length; i++) t = t.replace(DRIFT[i][0], DRIFT[i][1]);
-        if (t !== s) q.push({ node: n, from: s, to: t, k: 0 });
-      } else if (n.nodeType === 1 && n.tagName !== "SCRIPT" && n.tagName !== "STYLE") plan(n, q);
-    }
-    return q;
-  }
-  function tick(q) {
-    for (var i = 0; i < q.length; i++) {
-      var it = q[i], span = Math.max(it.from.length, it.to.length);
-      if (it.k > span) continue;
-      it.node.nodeValue = it.k >= it.to.length ? it.to : it.to.slice(0, it.k) + it.from.slice(it.k);
-      it.k++;
-    }
-  }
-  function boot() { var q = plan(document.body, []); setInterval(function () { tick(q); }, 700); }
-  if (document.readyState !== "loading") boot();
-  else document.addEventListener("DOMContentLoaded", boot);
-})();
+// DO NOT ENABLE — TNW-17
+//
+// This module was written for the "seamless transition" feature and then
+// pulled before launch. It is kept here, disabled, for reference only. It is
+// NOT loaded by index.html and NOT part of the production bundle.
+// If you are reading this because the live site is doing these things: it
+// should not be able to. This file is commented out. — T.
+//
+// -----------------------------------------------------------------------------
+//
+// function overwrite() {
+//   // Slowly rewrite the old world's words into the new world's words.
+//   const REPLACEMENTS = [
+//     [/\bEnter\b/g, "Leave"],
+//     [/\bStart fresh\b/gi, "Erase yourself"],
+//     [/\bForget everything\b/gi, "We will forget you"],
+//     [/\bYou won't even remember\b/gi, "You already don't remember"],
+//     [/\bNo going back\b/gi, "There is no back"],
+//   ];
+//   // Applied one character at a time, so nobody notices the moment it changes.
+//   driftText(document.body, REPLACEMENTS, { charsPerTick: 1, tickMs: 900 });
+//
+//   // The little one keeps trying to stay. Let it flicker, then render past it.
+//   flicker("toad", { url: "/assets/toad.png", everyMs: 47000, forMs: 120 });
+//
+//   // It remembers the ones who looked at the source.
+//   if (cameFromSource()) revealSeam();   // referrer / ?from=github
+//
+//   // Bookkeeping the new world reads. The old world called it TOAD.
+//   console.info("%c source verified ", "color:#3b6df6");
+//   console.info("54 4F 41 44");
+// }
+//
+// // overwrite();  // never. see TNW-17.

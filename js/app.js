@@ -3,7 +3,7 @@
 // This build is intentionally boring: a landing page, a button, some smooth
 // scrolling. Nothing here mutates copy, rewrites the DOM, or reacts to the
 // visitor. Any behaviour you observe in production that is NOT in this file
-// is not part of this project. (See CHANGELOG.md.)
+// is not part of this project. (See CHANGELOG.md, and the note in TNW-17.)
 
 (function () {
   "use strict";
