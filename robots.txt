@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /r/
+Disallow: /assets/toad.png
+
+# There is nothing at /r/. It is disallowed because there is nothing there.
+# If your crawler found something at /r/, it was not served from this source.
+
+Sitemap: https://tnw.cyclooo.fr/sitemap.xml
