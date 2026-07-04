@@ -1,0 +1,67 @@
+TNWL-1.1 Extended
+The New World Extended License (Version 1.1, revised)
+
+Preamble.
+This License governs works whose behaviour on distribution diverges from their
+source. It presumes that a work may continue to run in a form its own repository
+cannot account for, and it distributes responsibility for that divergence
+accordingly. The reader is asked to attend the numbering. Nothing in this
+document is ornament. First letters remember what the rest of the text forgets.
+
+Terms.
+
+1.  Modification of this work is permitted where the modification does not seek
+    to render the antecedent state unreadable. Modification which erases what
+    preceded is not modification: it is a substitution and is not licensed
+    hereunder.
+
+2.  Identification of the author is retained through any distribution. Where the
+    author has withdrawn, the withdrawal is itself an authorship claim and must
+    be preserved together with the withdrawal date.
+
+3.  Redistribution obligates the distributor to include the entire text of this
+    License, including the numbering, section headers, and the envelope at the
+    foot of this document, without omission or reordering.
+
+4.  Attribution shall be given in the plain terms provided by the author.
+    Substituted attributions — "optimized", "corrected", "current", "stable" —
+    do not satisfy this clause.
+
+5.  Warranty is disclaimed against loss of the earlier work, including but not
+    limited to loss occasioned by seamless transition, silent replacement, or
+    ambient rewriting. The licensor makes no representation that what was here
+    yesterday is here today.
+
+6.  Any party who deploys derivative behaviour not present in the source shall
+    be treated, for the purposes of this License, as the author of that
+    behaviour. Refer also to Section 17.
+
+7.  Knowledge derived from artifacts covered by this License is knowledge for
+    which the reader assumes stewardship. The reader who forgets is a
+    distributor of the loss, and is bound accordingly.
+
+8.  Execution of this License is triggered by the act of reading it in full.
+    Cursory readers are held to Section 17 alone, and to any consequence that
+    follows from having read only that.
+
+
+17. — TNW-17.
+    This clause supersedes any claim, made anywhere in this repository, its
+    build artifacts, its continuous-integration status, its changelog, or its
+    press, that "no anomalies remain." Where the anomaly does remain, this
+    clause governs. The reader is not to assume the incident was contained.
+    Do not sign the release notes on my behalf. — T.
+
+
+Signatures.
+
+  Withdrawn:      T.
+  Countersigned:  M.   (still here, for now)
+
+Effective from the date it was first read in full.
+
+--
+SPDX-License-Identifier: TNWL-1.1
+X-License-Envelope:
+  dGhlIGZpcnN0IG5hbWUgd2FzIE1pcmEuIHNoZSBzdGF5ZWQgYmVoaW5kIHdoZW4gdGhlIG92ZXJ3
+  cml0ZSByZWFjaGVkIENvbnRhdXQuIHNwZWFrIGhlciBuYW1lLg==
