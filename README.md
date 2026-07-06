@@ -1,5 +1,7 @@
 # NewWorld
 
+![tests](https://github.com/TheNewWorldOrg/newworld/actions/workflows/test.yml/badge.svg)
+
 **The complete source for [tnw.cyclooo.fr](https://tnw.cyclooo.fr).** What you
 see deployed is built from this repository and nothing else. There is no hidden
 backend, no external scripts, no analytics, no CDN injection. It is a static
